@@ -2,11 +2,18 @@
   <div id="join">
     <h2>Nickname</h2>
     <input
+      class="input"
       v-model="nickname"
       placeholder="pick a nickname"
       v-on:keyup.enter="connect(nickname)"
     />
-    <button type="submit" v-on:click="connect(nickname)">Join</button>
+    <button
+      class="button"
+      type="submit"
+      v-on:click="connect(nickname)"
+    >
+      Join
+    </button>
   </div>
 </template>
 
