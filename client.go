@@ -16,6 +16,12 @@ type client struct {
 	send   chan message
 }
 
+type message struct {
+	Time     string `json:"time,omitempty"`
+	Nickname string `json:"nickname,omitempty"`
+	Message  string `json:"message"`
+}
+
 func (c *client) readPump() {
 	defer func() {
 		c.server.hub.unregister <- c
