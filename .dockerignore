@@ -1,0 +1,14 @@
+*
+
+# app files
+!/app/public
+!/app/src
+!/app/babel.config.js
+!/app/package.json
+!/app/yarn.lock
+
+# server files
+!/cmd
+!/*.go
+!/go.mod
+!/go.sum
