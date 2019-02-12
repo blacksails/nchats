@@ -7,11 +7,7 @@
       placeholder="pick a nickname"
       v-on:keyup.enter="connect(nickname)"
     />
-    <button
-      class="button"
-      type="submit"
-      v-on:click="connect(nickname)"
-    >
+    <button class="button" type="submit" v-on:click="connect(nickname)">
       Join
     </button>
   </div>

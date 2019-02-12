@@ -1,12 +1,12 @@
 <style>
-  #chat-input {
-    display: flex;
-    align-items: center;
-  }
+#chat-input {
+  display: flex;
+  align-items: center;
+}
 
-  #chat-input .input {
-    flex-grow: 1;
-  }
+#chat-input .input {
+  flex-grow: 1;
+}
 </style>
 
 <template>
@@ -27,17 +27,17 @@
 </template>
 
 <script>
-  import { mapState, mapActions, mapMutations } from 'vuex';
+import { mapState, mapActions, mapMutations } from "vuex";
 
-  export default {
-    name: 'chat-input',
-    computed: mapState(['nickname', 'inputMessage']),
-    methods: {
-      updateInputMessage(e) {
-        this.setInputMessage(e.target.value);
-      },
-      ...mapActions(['sendMessage']),
-      ...mapMutations(['setInputMessage']),
+export default {
+  name: "chat-input",
+  computed: mapState(["nickname", "inputMessage"]),
+  methods: {
+    updateInputMessage(e) {
+      this.setInputMessage(e.target.value);
     },
-  };
+    ...mapActions(["sendMessage"]),
+    ...mapMutations(["setInputMessage"])
+  }
+};
 </script>

@@ -1,17 +1,17 @@
 <style>
-  .message {
-    margin-bottom: 4px;
-  }
+.message {
+  margin-bottom: 4px;
+}
 
-  .time {
-    color: #aaa;
-    font-size: 10px;
-    margin-right: 4px;
-  }
+.time {
+  color: #aaa;
+  font-size: 10px;
+  margin-right: 4px;
+}
 
-  .nickname {
-    color: #0088cc;
-  }
+.nickname {
+  color: #0088cc;
+}
 </style>
 
 <template>
@@ -25,12 +25,12 @@
 </template>
 
 <script>
-  export default {
-    name: 'message',
-    props: {
-      time: String,
-      nickname: String,
-      message: String,
-    },
-  };
+export default {
+  name: "message",
+  props: {
+    time: String,
+    nickname: String,
+    message: String
+  }
+};
 </script>

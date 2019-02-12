@@ -1,21 +1,17 @@
 <style>
-  #room {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
+#room {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 </style>
 <template>
   <div id="room">
     <div class="header">
-    <h2>Connected as {{ nickname }}</h2>
-    <a
-      class="button"
-      href="#"
-      v-on:click="disconnect"
-    >
-      Logout
-    </a>
+      <h2>Connected as {{ nickname }}</h2>
+      <a class="button" href="#" v-on:click="disconnect">
+        Logout
+      </a>
     </div>
     <Messages />
     <ChatInput />

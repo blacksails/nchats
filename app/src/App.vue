@@ -1,12 +1,12 @@
 <style>
-  #app {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
-    display: flex;
-  }
+#app {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+}
 </style>
 
 <template>
